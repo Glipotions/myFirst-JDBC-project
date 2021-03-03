@@ -1,0 +1,44 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>jdbc-egitim</groupId>
+  <artifactId>02-com.jdbc.connection</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  
+  
+      <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.8.1</version>
+        <configuration>
+          <release>14</release>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+  
+  <properties> 
+  	<mysql.versiyon>8.0.23</mysql.versiyon>
+  	<log4j.versiyon>2.3</log4j.versiyon>
+  </properties>
+  
+  <!-- MySQL -->
+  <dependencies>
+	  <dependency>
+		  <groupId>mysql</groupId>
+		  <artifactId>mysql-connector-java</artifactId>
+		  <version>${mysql.versiyon}</version>
+	  </dependency>
+ 
+  
+  	<!-- LOG4J -->
+  <dependency>
+   		<groupId>org.apache.logging.log4j</groupId>
+		<artifactId>log4j-core</artifactId>
+		<version>${log4j.versiyon}</version>
+  </dependency>
+  
+  </dependencies>
+  
+  
+</project>
